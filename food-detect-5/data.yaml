@@ -1,0 +1,28 @@
+names:
+- boiled_chicken
+- boiled_chicken_blood_jelly
+- boiled_egg
+- chainese_sausage
+- chicken_rice
+- crispy_pork
+- crunchy_squid
+- cucumber
+- egg_noodles
+- fish_ball
+- fried_chicken
+- fried_fish_balls
+- fried_tofu
+- noodle
+- red_pork
+- red_pork_and_crispy_pork
+- tofu
+nc: 17
+roboflow:
+  license: CC BY 4.0
+  project: food-detect-qdnvk
+  url: https://universe.roboflow.com/sarann/food-detect-qdnvk/dataset/5
+  version: 5
+  workspace: sarann
+test: ../test/images
+train: ../train/images
+val: ../valid/images
