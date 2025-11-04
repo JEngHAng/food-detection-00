@@ -1,0 +1,29 @@
+names:
+- boiled_chicken
+- boiled_chicken_blood_jelly
+- boiled_egg
+- chainese_sausage
+- chicken_drumstick
+- chicken_rice
+- chicken_shredded
+- crispy_pork
+- cucumber
+- daikon_radish
+- fried_chicken
+- fried_tofo
+- minced_pork
+- noodle
+- red_pork
+- red_pork_and_crispy_pork
+- rice
+- stir_fried_basil
+nc: 18
+roboflow:
+  license: CC BY 4.0
+  project: food-detect-qdnvk
+  url: https://universe.roboflow.com/sarann/food-detect-qdnvk/dataset/7
+  version: 7
+  workspace: sarann
+test: ../test/images
+train: ../train/images
+val: ../valid/images
