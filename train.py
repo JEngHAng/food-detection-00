@@ -6,7 +6,7 @@ def main():
     # เริ่มเทรนโมเดล
     model.train(
         data="food-detect-8/data.yaml",  # path ไปยัง dataset
-        epochs=400,                      # จำนวนรอบการเทรน 
+        epochs=200,                      # จำนวนรอบการเทรน 
         imgsz=640,                       # ขนาดภาพระหว่างเทรน
         batch=16,                        # จำนวนภาพต่อ batch
         device="cuda",                   # ใช้ GPU ถ้ามี (cuda), ถ้าไม่มีจะใช้ cpu อัตโนมัติ
