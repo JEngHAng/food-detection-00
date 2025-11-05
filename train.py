@@ -5,10 +5,10 @@ def main():
 
     # เริ่มเทรนโมเดล
     model.train(
-        data="food-detect-7/data.yaml",  # path ไปยัง dataset (ต้องมี train/val และชื่อ class)
-        epochs=400,                      # จำนวนรอบการเทรน (300 พอเหมาะกับ dataset ~1.6k รูป)
+        data="food-detect-8/data.yaml",  # path ไปยัง dataset
+        epochs=400,                      # จำนวนรอบการเทรน 
         imgsz=640,                       # ขนาดภาพระหว่างเทรน
-        batch=16,                        # จำนวนภาพต่อ batch (ถ้า VRAM < 8GB ใช้ 8 แทน)
+        batch=16,                        # จำนวนภาพต่อ batch
         device="cuda",                   # ใช้ GPU ถ้ามี (cuda), ถ้าไม่มีจะใช้ cpu อัตโนมัติ
         name="food_detect_model",        # ชื่อโฟลเดอร์สำหรับบันทึกผลเทรน
         workers=4,                       # จำนวน thread สำหรับโหลดข้อมูล (มากขึ้นถ้า CPU แรง)
