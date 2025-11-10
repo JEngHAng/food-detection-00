@@ -7,7 +7,7 @@ def main():
     model.train(
         data="food-detect-8/data.yaml",  # path ไปยัง dataset
         epochs=200,                      # จำนวนรอบการเทรน 
-        imgsz=896,                       # ขนาดภาพระหว่างเทรน
+        imgsz=832,                       # ขนาดภาพระหว่างเทรน
         batch=8,                        # จำนวนภาพต่อ batch
         device="cuda",                   # ใช้ GPU ถ้ามี (cuda), ถ้าไม่มีจะใช้ cpu อัตโนมัติ
         name="food_detect_model",        # ชื่อโฟลเดอร์สำหรับบันทึกผลเทรน
@@ -18,7 +18,7 @@ def main():
         lrf=0.01,                        # ค่า learning rate ปลายทางเมื่อเทรนใกล้จบ
         momentum=0.937,                  # ใช้ momentum ค่ามาตรฐาน YOLO (ช่วยให้การเรียนรู้เสถียร)
         weight_decay=0.0005,             # ป้องกัน overfitting โดยลดน้ำหนัก parameter ที่ไม่สำคัญ
-        patience=30,                     # ถ้า val loss ไม่ดีขึ้นเกิน 30 รอบ จะหยุดเทรนอัตโนมัติ
+        patience=10,                     # ถ้า val loss ไม่ดีขึ้นเกิน 30 รอบ จะหยุดเทรนอัตโนมัติ
         val=True,                        # ให้ validate หลังแต่ละ epoch เพื่อดู performance
         seed=42,                         # ตั้งค่า random seed ให้เทรนได้ผลซ้ำได้
         cos_lr=True,                     # ใช้ cosine learning rate schedule เพื่อการลดค่า lr อย่างนุ่มนวล
